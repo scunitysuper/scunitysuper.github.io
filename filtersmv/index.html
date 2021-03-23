@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filters</title>
+
+	<style>
+		
+		
+     .my_filter{
+		 
+		
+
+      -webkit-filter: blur:(100px); saturate(0); 
+      filter: blur(100px);
+		filter: saturate(0);
+
+     }
+		
+	
+
+
+
+
+    .my_filter:hover{
+
+      animation: 4s myfilteranimation forwards;
+
+    }
+
+
+
+
+     @keyframes myfilteranimation{
+      
+	      100%{
+	       -webkit-filter: blur:(0px); 
+	        filter: blur(0px);
+			  filter: saturate(4); brightness(0);
+	       }
+
+     }
+
+
+
+
+	</style>
+</head>
+<body>
+
+<img class="my_filter" src="img/Viggo.jpg" alt="flower">
+
+</body>
+</html>
